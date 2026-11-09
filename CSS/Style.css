@@ -1,0 +1,327 @@
+body{
+    margin: 1%;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600; /*consigliata da google font per il nostro tipo di font del testo*/
+    font-style: normal;
+    font-size: large;
+    background-color: #f5d8de;
+}
+
+/*vogliamo che tutti i paragrafi del nostro sito siano allineati al centro*/
+p{
+    text-align: center;
+}
+
+/*questi due css sono per la navigazione del sito in fondo alle pagine web*/
+#linaviga{
+    display: inline;
+    margin: 1%;
+}
+
+#ulnaviga{
+    text-align: center;
+}
+
+/*questo css serve per una lista ul che sta in index, per allineare l'ul al centro*/
+.lista-centro {
+    list-style: none;        /* toglie i pallini */
+    text-align: center;      /* centra il testo */
+}
+
+.divContatti{
+
+    text-align: center;
+    border-width: 1%;
+    border-style: groove;
+    border-color:#4b2340;
+    padding-bottom: 2%;
+    border-radius: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.immaginisito{
+
+    border-radius: 10px;
+    margin: 1%;
+    border-style: groove;
+    border-color: black;
+
+}
+
+/*AGGIUNGE LE REGOLE PER LE IMMAGINI DELLO SCEHDARIO ALLE REGOLE DI IMMAGINI SITO*/
+.immaginisito.immagine_schedario{
+
+    display: block;
+    border-radius: 10px;
+    margin: 1%;
+    border-style: groove;
+    border-color: black;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*caratteristiche che devono avere tutte le tabelle almeno*/
+table{
+    
+    width: 80%;
+    margin-top: 2%;
+    border-radius: 10px;
+    background-color: #4b2340;
+    
+}
+
+/*caratteristiche che devono avere tutti i tr e td almeno*/
+tr, td{
+
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #d4b2b9;
+    
+}
+
+/*caratteristiche che devono avere tutti i tr e td almeno*/
+th{
+    border-radius: 5px;
+    background-color:#febecc
+}
+
+.divImmagini{
+
+    text-align: center;
+
+}
+
+.divForm{
+
+    text-align: center;
+    border-width: 1%;
+    border-radius: 15px;
+    border-color: #4b2340;
+    border-style: groove;
+    padding: 1.5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color:#d4b2b9;
+
+}
+
+/*LE REGOLE PER GLI ELEMENTID DI TIPO INPUT ALL'INTERNO DEL FORM*/
+.divForm input{
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 2px solid #4b2340;
+    background-color: #f5d8de;
+    text-align: center;
+}
+
+/*LE REGOLE PER QUANDO SELEZIONIAMO L'INPUT PER SCRIVERE*/
+.divForm input:focus {
+    outline: none;
+    background-color: #fff;
+}
+
+/*LE REGOLE PER GLI ELEMENTI DI TIPO BOTTONE NEL FORM*/
+.divForm button {
+    padding: 10px 20px;
+    margin: 10px 5px 0 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #c27a88;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/*REGOLE PER QUANDO CI PASSI SOPRA COL MOUSE*/
+.divForm button:hover {
+    background-color: #a85c6a;
+    transform: scale(1.1); /*quando passo sopra si ingrandisce di 1.1 il bottone*/
+}
+
+/*REGOLE PER IL DIV DEDICATO AL MESSAGGIO QUANDO INVIAMO IL FORM (messaggio che compare con js)*/
+.messaggio-form {
+    text-align: center;
+    margin: 1% auto;
+    padding: 1%;
+    background-color: #f5d8de;
+    width: 80%;
+    max-width: 600px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+/*i prossimi 3 css sono per la realizzazione dell'header in tutte le pagine*/
+.site-header {
+  background-color: #febecc;
+  border-radius: 10px;
+}
+
+.logo-title-wrapper {
+  display: flex; /*gli elementi si mettono uno accanto all’altro (non più uno sotto l’altro)*/
+  align-items: center; 
+  justify-content: space-between; /* logo a sinistra, testo a destra */ 
+
+}
+
+.title-area {
+    color: #4b2340;
+    text-align: center;
+    padding-right: 2%;
+}
+
+/*css dato da google font per fare le scritte dei titoli con il 'dancing-script'*/
+.dancing-script-titoli {
+    text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700; /*questo valore indica lo spessore va da 400min a 700max*/
+  font-style: normal;
+  color: #4b2340;
+}
+
+/*css per i bottoni*/
+button{
+    border-radius: 10px;
+    border-color: #4b2340;
+    cursor: url('../immagini/emoji_cane_per_cursore_on_button.png') 16 16, pointer;/*per fare l'immagine del cane quando clicchi*/
+}
+
+button:hover{
+    background-color: #febecc;
+}
+
+/*quesi due css sono per il colore dei link, quelli gia visitati e non*/
+a:link {
+   color: blue;       /* link non visitato */
+}
+
+a:visited {
+   color: purple;    /* link visitato */
+}
+
+/*tutti gli hr devono essere di quesot colore*/
+hr{
+    height: 1px;
+    background-color:#4b2340
+}
+
+/* =====================
+   RESPONSIVE - quando la finestra è più stretta di 768px
+   ===================== */
+@media (max-width: 768px) { /*"Applica queste regole solo se la larghezza dello schermo è 768 pixel o meno."*/
+
+    /* il body ha piu margine */
+    body {
+        margin: 2%;
+    }
+
+    /* l'header mette logo e testo uno sotto l'altro invece che affiancati */
+    .logo-title-wrapper {
+        flex-direction: column; /*SERVE PER METTERE LOGO E TITOLO NON PIU UNO DIFIANCO ALL'ALTRO MA SOTTO*/
+        text-align: center;
+    }
+
+    /* le immagini si adattano alla larghezza dello schermo */
+    .immaginisito {
+        width: 90%;
+        height: auto;
+    }
+
+    /* le immagini nella galleria vanno una sotto l'altra */
+    .divImmagini {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* i div dei contatti occupano tutta la larghezza */
+    .divContatti {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /* il form occupa tutta la larghezza */
+    .divForm {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /* la tabella diventa scorrevole se è troppo larga */
+    table {
+        width: 100%;
+    }
+
+    /* la navigazione in fondo va a capo più facilmente */
+    #linaviga {
+        display: block; /*VA A CAPO OGNI VOLTA, NON PIU INLINE*/
+        margin: 5px 0;
+    }
+
+}
+
+
+/* Stili per il menù a tendina */
+
+/*le regole per i contenuti che devono venire nascosti dal menu a tendina (in questo caso la tabella)*/
+.content {
+    max-height: 0; /*vuol dire che l'elemento non ha altezza quindi da l'effetto nascosto*/
+    width: 100%;
+    display: flex;
+    overflow-x: auto;/*quando lo schermo è piccolo permette di scrollare la tabella a destra e sinistra (responsive)*/
+}
+
+/*serve per il js per fare il menu a tendina*/
+.content.show {
+    max-height: 2000px; /*potrebbe essere 100%*/
+}
+
+.divtabella {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divtabella table {
+    width: 75%;
+}
+
+.divtabella table td,
+.divtabella table th {
+    padding: 10px;
+    text-align: center; 
+}
+
+.link-adozione {
+    
+    margin-top: 1.8%;
+    background-color: #f5d8de;
+    padding: 8px 16px; /*il primo è altezza e socondo larghezza*/
+    border-radius: 10px;
+    text-decoration: none ; /*senno avrebbe il trattino sotto*/
+    cursor: url('../immagini/emoji_cane_per_cursore_on_button.png') 16 16, pointer;
+    background-color:#febecc;
+    border-color: #4b2340;
+    border-style: groove;
+    border-width: 1px;
+    
+}
+
+.link-adozione:hover{
+    background-color:#fbb0c1;
+    transform: scale(1.1);
+}
+
+/*per mettere un margine tra l'immagine e il bottone presente in ogni divtabella, anche padding del bottone*/
+.divtabella button{
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+    padding: 5px;
+    
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <title>Iscrizione Rifugio del Cuore 🐾</title>
+        <link rel="stylesheet" href="../CSS/Style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap');
+
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="logo-title-wrapper">
+
+                <a href="index.html"><img src="../immagini/LOGO-SITO.png" alt="PAWS AND HOME - rifugio del cuore" width="250"></a>
+
+                <div class="title-area">
+                    <h1 class="dancing-script-titoli" >Rifugio del Cuore</h1>
+                    <p><strong>Amiamo gli animali e cerchiamo per loro una famiglia amorevole </strong></p>
+                </div>
+
+            </div>
+            
+        </header>
+
+        <hr>
+
+        <h2 class="dancing-script-titoli" >Modulo di iscrizioe</h2>
+        <p>Compilando questo modulo, farete richiesta per diventare un volontario e per iniziare a lavorare con noi</p>
+
+        <br>
+
+        <div class="divForm">
+            <form action="" id="formIscrizione" method="get">
+                <label for="nome">Nome: </label><br>
+                <input type="text" id="nome" name="nome" required placeholder="Inserisci il nome"><br><br>
+
+                <label for="cognome">Cogome: </label><br>
+                <input type="text" id="cognome" name="cognome" required placeholder="Inserisci il cognome"><br><br>
+
+                <label for="email">Email: </label><br>
+                <input type="email" id="email" name="email" required placeholder="Inserisci l'email"><br><br>
+
+                <label for="telefono">Numero di telefono</label><br>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Inserisci il numeor di telefono"><br><br>
+
+                <label for="dataNascita">Data di nascita (OBBLIGATORIO ESSERE MAGGIORENNI):</label><br>
+                <input type="date" id="dataNascita" min="1955-01-01" max="2008-04-24"><br><br> <!--min è per l'età massima max è per l'età minima-->
+
+                <button type="submit" id="btnInviaIscrizione">Invia modulo</button>
+                <button type="reset" id="btnReset">Pulisci modulo</button>
+
+            </form>
+        </div>
+
+        <div id="div_messaggio_iscrizione" class="messaggio-form"></div>
+
+        
+        <hr>
+
+        <br>
+
+        
+        <nav>
+            <ul id="ulnaviga">
+                <li id="linaviga"><a href="index.html">Home</a></li>
+                <li id="linaviga"><a href="Contatti.html">Contatti</a></li>
+                <li id="linaviga"><a href="galleria.html">Galleria</a></li>
+                <li id="linaviga"><a href="Schedario.html">Schedario</a></li>
+                <li id="linaviga"><a href="adozione.html">Adotta ora</a></li>
+                <li id="linaviga"><a href="iscrizione.html">Lavora con noi</a></li>
+                <li id="linaviga"><a href="donazione.html">Dona ora</a></li>
+            </ul>
+        </nav>
+
+        
+
+        <small>
+            <p>&copy; Associazione no-profit dal 2010 Paws & Home - Tutti i diritti riservati.</p>
+        </small>
+
+        <script src="../JS/script.js"></script>
+    </body>
+</html>
